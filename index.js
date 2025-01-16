@@ -22,7 +22,7 @@ app.post('/addWord', (req, res) => {
   }
 })
 
-app.get('/search', (req, res) => {
+app.post('/search', (req, res) => {
   const { wordSearched } = req.body
 
   if (!wordSearched) {
